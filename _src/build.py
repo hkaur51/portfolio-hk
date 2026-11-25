@@ -27,7 +27,7 @@ i = s.index('<script>\n{')
 s = s[:i] + shim + s[i:]
 s = s.replace('<head>', '<head>\n<meta name="description" content="Dr. Harsimrat Kaur, MSPH, BDS: dentist, public health researcher and health tech builder.">', 1)
 open(f'{R}/index.html', 'w').write(s)
-for f in ['bg-tall-v2.jpg', 'bg-wide-v2.jpg', 'me-still-v1.webp', 'me-v1.webp', 'name-tall-v2.png', 'name-wide-v2.png']:
+for f in ['sleeve.jpg', 'bg-tall-v2.jpg', 'bg-wide-v2.jpg', 'me-still-v1.webp', 'me-v1.webp', 'name-tall-v2.png', 'name-wide-v2.png']:
     shutil.copy(f'{S}/{f}', f'{R}/{f}')
 for d in ['fonts', 'manifesto']:
     if os.path.exists(f'{R}/{d}'): shutil.rmtree(f'{R}/{d}')
