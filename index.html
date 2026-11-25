@@ -543,7 +543,7 @@ function vinylSpot(b, i) {
         if (vCtrl) { try { vCtrl.togglePlay(); } catch (e) {} }
         else { vWantPlay = true; }
       } },
-      h('img', { src: 'sleeve.jpg', alt: '' }), h('span', { class: 'vplay', 'aria-hidden': 'true' }, vPlaying ? '❚❚' : '▶')),
+      h('img', { src: 'sleeve.jpg?v=3', alt: '' }), h('span', { class: 'vplay', 'aria-hidden': 'true' }, vPlaying ? '❚❚' : '▶')),
     h('span', { class: 'vnotes', 'aria-hidden': 'true' }, ['♪', '♫', '♪', '♬'].map((n, k) => h('i', { class: 'vn vn' + k }, n))),
     tip);
   function refresh() { const cur = document.querySelector('.vspot'); if (!cur) return; cur.classList.toggle('playing', vPlaying); const bt = cur.querySelector('.vsleeve'); bt.setAttribute('aria-pressed', vPlaying ? 'true' : 'false'); bt.setAttribute('aria-label', (vPlaying ? 'Pause ' : 'Play my favourite song: ') + name); cur.querySelector('.vplay').textContent = vPlaying ? '❚❚' : '▶'; cur.querySelector('.vtip').textContent = tipText(); if (vHolder && vPlaying) vHolder.classList.add('on'); }
