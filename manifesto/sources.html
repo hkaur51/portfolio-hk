@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corpus Sources</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600;700&family=Palanquin:wght@400;600&display=swap">
+<style>
+/* VOICE: quiet, scholarly reference list
+   IDEA: the sources panel of a research poster
+   PICTURE: a single list of datasets, colour-keyed to the poster's conditions
+   COLOUR and TYPE: beige ground, plum ink, terracotta links; Archivo Narrow + Palanquin
+   LAYOUT: one centred column */
+:root{color-scheme:light dark;--bg:light-dark(#F4EEE4,#231D26);--card:light-dark(#FBF8F2,#2E2632);--ink:light-dark(#3A2E40,#EDE5DA);--muted:light-dark(#6E6274,#B8AEB9);--link:light-dark(#A65A3F,#E5A48A);--line:light-dark(#E4D9C7,#4A3F4D)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Palanquin,system-ui,sans-serif;overflow-x:clip}
+main{max-width:760px;margin:0 auto;padding:clamp(28px,5vw,64px) max(5vw,16px)}
+h1{font:700 clamp(32px,5vw,44px)/1.05 'Archivo Narrow',sans-serif;margin:0 0 10px;text-wrap:balance}
+.lede{color:var(--muted);margin:0 0 28px}
+ol{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 18px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;align-items:baseline}
+.name{font:700 19px/1.2 'Archivo Narrow',sans-serif}
+.cls{color:var(--muted);font-size:14px;grid-column:1}
+a{color:var(--link);font-weight:600;text-decoration-thickness:1px;text-underline-offset:3px;grid-column:2;grid-row:1/3;white-space:nowrap}
+a:focus-visible{outline:2px solid var(--link);outline-offset:3px;border-radius:2px}
+.missing{color:var(--muted);font-style:italic;grid-column:2;grid-row:1/3}
+@media(max-width:600px){li{grid-template-columns:1fr}a,.missing{grid-column:1;grid-row:auto}}
+</style>
+</head>
+<body>
+<main>
+<h1>The 9 datasets behind my corpus</h1>
+<p class="lede">I kept 9 public intraoral photograph datasets after quality control. Each link opens its original publication or repository.</p>
+<ol>
+<li><span class="name">Dental Caries</span><span class="cls">Ahmed et al. 2025, Scientific Data · YOLO · caries, healthy</span><a href="https://doi.org/10.1038/s41597-025-05647-9">Open source</a></li>
+<li><span class="name">OMNI (Malocclusion)</span><span class="cls">Xue et al. 2025, arXiv · COCO JSON · malocclusion, orthodontic devices, normal</span><a href="https://doi.org/10.48550/arXiv.2505.15637">Open source</a></li>
+<li><span class="name">Intelligent Diagnostic</span><span class="cls">Liu et al. 2024, BMC Oral Health · PNG masks · calculus, gingivitis, caries</span><a href="https://doi.org/10.1186/s12903-024-05072-1">Open source</a></li>
+<li><span class="name">Oral Cancer</span><span class="cls">Piyarathne et al. 2024, Oral Oncology · COCO JSON · oral cancer, benign, OPMD, normal</span><a href="https://doi.org/10.1016/j.oraloncology.2024.106946">Open source</a></li>
+<li><span class="name">DentalAI (DatasetNinja)</span><span class="cls">Valluri 2023, Kaggle · COCO JSON · cavity, caries, crack, healthy</span><a href="https://www.kaggle.com/datasets/pawanvalluri/dental-segmentation">Open source</a></li>
+<li><span class="name">Gingivitis</span><span class="cls">Duy et al. 2024, Data in Brief · YOLO · 7-grade severity scale</span><a href="https://doi.org/10.1016/j.dib.2024.110960">Open source</a></li>
+<li><span class="name">Oral Lesions</span><span class="cls">Cheng et al. 2026, International Dental Journal · COCO JSON · benign ulcers, leukoplakia, lichen planus</span><a href="https://doi.org/10.1016/j.identj.2026.109486">Open source</a></li>
+<li><span class="name">Ulcers (Autooral)</span><span class="cls">Jiang et al. 2024, Scientific Reports · PNG masks · oral ulcers</span><a href="https://doi.org/10.1038/s41598-024-69125-9">Open source</a></li>
+<li><span class="name">Kaggle Healthy Teeth</span><span class="cls">Kaggle · YOLO · tooth types, mapped to healthy</span><span class="missing">Link coming</span></li>
+</ol>
+</main>
+</body>
+</html>
