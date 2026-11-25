@@ -531,7 +531,7 @@ function vinylSpot(b, i) {
   const tid = (/open\.spotify\.com\/(?:intl-[a-z]+\/)?track\/([A-Za-z0-9]+)/.exec(txt(s.url)) || [])[1];
   const name = [txt(s.title), txt(s.artist)].filter(Boolean).join(' — ');
   const tip = h('span', { class: 'tip vtip' + (+G.top + +G.height > 78 ? ' up' : '') + (+G.left < 14 ? ' l' : (+G.left + +G.width > 86 ? ' r' : '')) });
-  const tipText = () => vPlaying ? 'Now playing: ' + name + ' · click to pause' : 'Want to hear my favourite song while you explore? Click to play' + (name ? ': ' + name : '');
+  const tipText = () => vPlaying ? 'Now playing: ' + name : 'Want to hear my favourite song while you explore?';
   tip.textContent = tipText();
   const el = h('div', { class: 'spot vspot' + (vPlaying ? ' playing' : ''), 'data-n': i + 1, 'data-id': b.id,
     style: `left:${+G.left}%;top:${+G.top}%;width:${+G.width}%;height:${+G.height}%;--r:${+G.rotate || 0}deg` },
