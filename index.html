@@ -339,6 +339,18 @@ body[data-combo=music] .back{color:#111}
 .vplayer{position:absolute;z-index:7;width:max(280px,16%);opacity:0;transform:translateY(-6px);pointer-events:none;transition:opacity .3s,transform .3s}
 .vplayer.on{opacity:1;transform:none;pointer-events:auto}
 .vplayer iframe{display:block;border:0;border-radius:12px;box-shadow:0 8px 20px #0003}
+
+/* little music notes drifting off the sleeve, so it reads as something to click */
+.vnotes{position:absolute;inset:0;pointer-events:none;z-index:3}
+.vn{position:absolute;font:700 clamp(15px,1.4vw,24px)/1 "Helvetica Neue",Helvetica,Arial,sans-serif;font-style:normal;color:#0055A4;text-shadow:0 1px 0 #fffacd,0 0 6px #fffacd;opacity:0;animation:vnote 3.6s ease-in-out infinite}
+.vn0{left:-14%;top:12%;animation-delay:0s}
+.vn1{right:-16%;top:-10%;animation-delay:.9s;color:#CD5C5C}
+.vn2{left:-8%;bottom:4%;animation-delay:1.8s;color:#CD5C5C}
+.vn3{right:-12%;bottom:18%;animation-delay:2.7s}
+@keyframes vnote{0%{opacity:.35;transform:translateY(6px) rotate(-8deg)}20%{opacity:1}70%{opacity:.9}100%{opacity:.35;transform:translateY(-16px) rotate(10deg)}}
+.vspot.playing .vn{animation-duration:2s}
+.vspot.playing .vn1,.vspot.playing .vn3{right:-70%}
+@media (prefers-reduced-motion:reduce){.vn{animation:none;opacity:.85}}
 </style>
 </head>
 <body>
@@ -532,6 +544,7 @@ function vinylSpot(b, i) {
         else { vWantPlay = true; }
       } },
       h('img', { src: 'sleeve.jpg', alt: '' }), h('span', { class: 'vplay', 'aria-hidden': 'true' }, vPlaying ? '❚❚' : '▶')),
+    h('span', { class: 'vnotes', 'aria-hidden': 'true' }, ['♪', '♫', '♪', '♬'].map((n, k) => h('i', { class: 'vn vn' + k }, n))),
     tip);
   function refresh() { const cur = document.querySelector('.vspot'); if (!cur) return; cur.classList.toggle('playing', vPlaying); const bt = cur.querySelector('.vsleeve'); bt.setAttribute('aria-pressed', vPlaying ? 'true' : 'false'); bt.setAttribute('aria-label', (vPlaying ? 'Pause ' : 'Play my favourite song: ') + name); cur.querySelector('.vplay').textContent = vPlaying ? '❚❚' : '▶'; cur.querySelector('.vtip').textContent = tipText(); if (vHolder && vPlaying) vHolder.classList.add('on'); }
   /* the Spotify player sits under the sleeve (GitHub copy only); it is made once and never moved, so the music keeps playing */
