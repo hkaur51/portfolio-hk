@@ -58,7 +58,7 @@
 "left": 33.967,
 "linkType": "page",
 "rotate": -1.5,
-"title": "Pertussis in early infancy",
+"title": "Academic training at Johns Hopkins",
 "top": 2.717,
 "url": "",
 "wide": {
@@ -68,7 +68,8 @@
 "top": 4.819432703596968,
 "width": 8.593359750240154
 },
-"width": 11.821
+"width": 11.821,
+"pageId": "hopkins"
 },
 {
 "frame": false,
@@ -219,14 +220,22 @@
 "frame": false,
 "height": 10.054,
 "id": "card-habit-return",
-"imageId": "",
+"imageId": "8ce40a83400a92c7ef668423962006c2",
 "left": 4.076,
-"linkType": "none",
-"rotate": 0,
-"title": "",
+"linkType": "page",
+"rotate": 1,
+"title": "Pertussis in early infancy",
 "top": 33.696,
 "url": "",
-"width": 19.022
+"width": 19.022,
+"pageId": "card-sun-will-rise",
+"wide": {
+"height": 13.704,
+"left": 86.25,
+"rotate": 1,
+"top": 9.63,
+"width": 11.667
+}
 },
 {
 "frame": false,
@@ -593,6 +602,43 @@
 "subtitle": "The questions I couldn't answer from the chair",
 "imageId": "faef43741ee747eab11e30f73ae8dd62",
 "body": "Treating those two patients fixed two mouths. Finding out how many others were doing the same thing, and why, took a survey, a scoring scale and a room full of dentists. That was the first time I saw a problem in my clinic as a pattern in a population.\n\nAfter that, I kept noticing the questions I couldn't answer from the chair. Why is this patient taking longer to heal? Why did that one stop showing up? Is this happening at scale? Public health is where those questions get answered, so I went to Johns Hopkins for my MSPH to learn how.",
+"links": []
+}
+]
+},
+"projects/hopkins": {
+"title": "Academic training at Johns Hopkins",
+"subtitle": "MSPH, Global Disease Epidemiology and Control · Johns Hopkins Bloomberg School of Public Health",
+"layout": "story",
+"coverId": "",
+"body": "I came to Hopkins with questions I couldn't answer from the dental chair, and left with the tools to answer them.\n\n- Degree: MSPH in Global Disease Epidemiology and Control\n- Focus: data science, digital health and vaccines\n- Tools: Python and R",
+"links": [],
+"gallery": [],
+"sections": [
+{
+"heading": "Research",
+"subtitle": "Four research roles across the school",
+"imageId": "",
+"body": "- International Vaccine Access Center (2025): pertussis severity in infants, and a database for the meta-analysis behind the WHO's immunization schedule recommendations. See the Pertussis in early infancy pin.\n- Institute for Global Tobacco Control (Dec 2024 to Jun 2025): designed a scalable coding framework for a systematic review of tobacco-related media in 147 countries, to give global health policy an evidence base.\n- Center for Global Digital Health Innovation (May to Jul 2025): produced two issues of the Research Roundup newsletter and ran the center's social media. See the Top content pin.\n- GHRSTA Scholar, Gupta-Klinsky India Institute (Dec 2025 to May 2026): awarded $3,500 through the Girish and Himangi Rishi Award to define research questions for designing the India RISE Fellowship, which helps women in STEM move into leadership roles in academia.",
+"links": []
+},
+{
+"heading": "Thesis",
+"subtitle": "The first unified benchmark dataset for dental AI",
+"imageId": "",
+"body": "There was no clean dataset to start from, so I built one: around 18,000 images of the mouth across nine disease classes, pulled together from scattered public sources so AI models for dental diagnostics can finally be trained and compared on the same ground. See the Screening Without Walls pin.",
+"links": [
+{
+"label": "View the dataset on GitHub",
+"url": "https://github.com/hkaur51/dental-ai-benchmark-dataset"
+}
+]
+},
+{
+"heading": "Beyond the classroom",
+"subtitle": "Teaching, leading and building",
+"imageId": "",
+"body": "- Teaching: graduate teaching assistant for Vaccine Policy Issues\n- Leading: Vice President of the Digital Health Society\n- Building: Spark Accelerator (1st place), summer incubator, Fuel Accelerator and NSF I-Corps with DYSA.AI\n\nMore on each in the Leadership and events and Working at startups pins.",
 "links": []
 }
 ]
