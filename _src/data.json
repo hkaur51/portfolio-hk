@@ -571,5 +571,30 @@
 "links": [],
 "sections": [],
 "subtitle": "My figs will never rot because I am the tree"
+},
+"projects/card-bloom": {
+"title": "My work as a dentist",
+"subtitle": "BDS, Manipal College of Dental Sciences, Mangalore · Resident dental surgeon, 2022 to 2023",
+"layout": "story",
+"coverId": "",
+"body": "Before public health, I was in the chair. As a resident dental surgeon at MCODS Mangalore, I cared for patients of all ages, from preventive care to restorations and cosmetic work.\n\n- Rural camps: mobile dental camps across 48 rural sites in India, treating 1,000+ patients\n- Research: presented at 8+ national dental research conferences\n- Abroad: clinical externship with Melaka Manipal University, Malaysia, and a talk at the UiTM dental conference in Kuala Lumpur",
+"links": [],
+"gallery": [],
+"sections": [
+{
+"heading": "The vampire teeth story",
+"subtitle": "How two patients turned into a study, a 1st place and a change in outreach",
+"imageId": "1de22673a0d454ee117cafcce5ae0a57",
+"body": "Two young patients came into my clinic in excruciating pain. They had filed their own canines into vampire fangs after a TikTok trend. I restored their teeth, but I couldn't stop thinking about it. Two cases isn't data, but I was fairly sure it wasn't a one-off.\n\n- Flagged it: I took it to the public health department. They didn't have the funding to look into it.\n- Studied it myself: I surveyed 300+ dentists across 5 dental colleges in Karnataka, and scored popular oral health videos on a validated scale. Most of the high-engagement videos weren't clinically accurate.\n- Presented it: \"Don't Do It Yourself: Dangers of DIY Dentistry\" won the overall best e-poster, 1st out of 150+, at the first ADAI national conference in Mangalore, February 2023.\n- Changed something: my dental school added social media misinformation to its preventive health outreach, which reaches 1,000+ patients a year.",
+"links": []
+},
+{
+"heading": "Why it brought me to public health",
+"subtitle": "The questions I couldn't answer from the chair",
+"imageId": "faef43741ee747eab11e30f73ae8dd62",
+"body": "Treating those two patients fixed two mouths. Finding out how many others were doing the same thing, and why, took a survey, a scoring scale and a room full of dentists. That was the first time I saw a problem in my clinic as a pattern in a population.\n\nAfter that, I kept noticing the questions I couldn't answer from the chair. Why is this patient taking longer to heal? Why did that one stop showing up? Is this happening at scale? Public health is where those questions get answered, so I went to Johns Hopkins for my MSPH to learn how.",
+"links": []
+}
+]
 }
 }
