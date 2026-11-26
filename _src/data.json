@@ -166,6 +166,13 @@
 "url": "https://open.spotify.com/track/2X485T9Z5Ly0xyaghN73ed",
 "title": "Let It Happen",
 "artist": "Tame Impala"
+},
+"wide": {
+"height": 16.92901366207706,
+"left": 35.81520485110471,
+"rotate": 0,
+"top": 24.843166079624293,
+"width": 9.268792026897215
 }
 },
 {
@@ -253,6 +260,27 @@
 "width": 8.910851764496462
 },
 "width": 13.451
+},
+{
+"frame": false,
+"height": 33.5,
+"id": "portrait-me",
+"imageId": "",
+"left": 46.2,
+"linkType": "page",
+"pageId": "card-slow-down",
+"rotate": 0,
+"title": "About me",
+"top": 66.5,
+"url": "",
+"wide": {
+"height": 56,
+"left": 58,
+"rotate": 0,
+"top": 44,
+"width": 42
+},
+"width": 53.8
 }
 ]
 },
@@ -536,5 +564,12 @@
 ],
 "subtitle": "A dental AI benchmark dataset, from my MSPH capstone",
 "title": "Screening Without Walls"
+},
+"projects/card-slow-down": {
+"body": "When I was younger, my teachers called me Miss Question Mark because my hand was always up. I wanted to know what was happening behind closed doors and which wheels were turning, and honestly, that curiosity is what got me here.\n\nI'm a dentist by training. During dental school, I ran mobile dental camps across 48 rural sites in India and treated over 1,000 patients. I kept seeing patients whose outcomes didn't match others with the same problem who were being treated in a different setting. Why is this patient taking longer to heal? Why did that one stop showing up? Is this particular behavior happening at scale? Those weren't questions I could answer from the chair.\n\nSo I went to Johns Hopkins for my MSPH. I took courses in data science, digital health and vaccines, and learned the exact skill set to answer questions like these. For my practicum at IVAC, I did a secondary data analysis uncovering how much pertussis infection was hiding in infants and how severe it really gets. That work fed into a recommendation to the World Health Organisation. For my thesis, I built the first unified benchmark dataset for training AI models on images of the mouth: around 18,000 images across nine disease classes.\n\nAlong the way, I've always loved taking what I know and putting it into products that actually reach people. I worked in marketing for digital health startups in India, founded my own startup, Dysa.AI, at Hopkins, and now lead go-to-market and operations at another. \n\nNext, I want to bring all of it to management and strategy consulting, where the problems are bigger and the answers reach more people.\n\nOff the clock, I'm the eldest of three siblings, so I was born a leader. I'm also a big-time yapper. I love being on stage, whether that's hosting Hopkins' Bloomberg's Got Talent for 300+ people or moderating a conference, and making everyone in the room feel part of what's happening. And every other day, you'll find me doing yoga on a video call with my mom and my sister.",
+"gallery": [],
+"links": [],
+"sections": [],
+"subtitle": "My figs will never rot because I am the tree"
 }
 }
